@@ -1,0 +1,153 @@
+.join-job-container {
+    display: flex;
+    justify-content: center;
+    padding: 112px 112px;
+    .join-job {
+        background-color: #fff;
+        width: 100%;
+        max-width: 720px;
+        height: 450px;
+        border-radius: 20px;
+        padding-top: 50px;
+
+        .join-job-header {
+            display: flex;
+            justify-content: center;
+            color: #02aa8a;
+            font-size: 30px;
+        }
+        .join-job-input {
+            display: flex;
+            justify-content: space-around;
+            padding-top: 50px;
+        }
+        .join-job-or {
+            width: 245px;
+            height: 160px;
+            position: relative;
+            padding-bottom: 20px;
+        }
+        h1 {
+            margin: 5px 0 10px 0;
+        }
+        .job-laber {
+            font-weight: 500;
+            font-size: 18px;
+        }
+        input[type="radio"] {
+            -webkit-appearance: none;
+            appearance: none;
+            background-color: white;
+            height: 100%;
+            width: 100%;
+            border-radius: 10px;
+            position: absolute;
+            box-shadow: 7px 7px 15px rgba(2, 28, 53, 0.08);
+            cursor: pointer;
+            outline: none;
+        }
+        .job-submit {
+            font-weight: 500;
+            font-size: 18px;
+            letter-spacing: 0.5px;
+            margin: 20px 0 10px 0;
+        }
+
+        input[type="radio"]:before {
+            content: "";
+            position: absolute;
+            height: 22px;
+            width: 22px;
+            background-color: #f9fafd;
+            border: 2px solid #02aa8a;
+            border-radius: 50%;
+            top: 15px;
+            right: 15px;
+        }
+
+        input[type="radio"]:after {
+            content: "";
+            position: absolute;
+            height: 13px;
+            width: 13px;
+            background-color: transparent;
+            border-radius: 50%;
+            top: 19.5px;
+            right: 19.5px;
+        }
+        label {
+            position: absolute;
+            margin-top: 90px;
+            margin-left: 30px;
+            cursor: pointer;
+        }
+
+        input[type="radio"]:hover {
+            transform: scale(1.05);
+        }
+        input[type="radio"]:checked {
+            background-color: #02aa8a;
+        }
+        input[type="radio"]:checked:after {
+            background-color: #02aa8a;
+        }
+
+        .job-submit {
+            padding: 10px;
+            color: white;
+            font-size: 15px;
+            text-align: center;
+            border: 0;
+            outline: none;
+            display: flex;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            border-radius: 20px;
+            background-color: #02aa8a;
+            font-family: "Poppins", sans-serif;
+            cursor: pointer;
+            font-weight: 600;
+            box-shadow: 0 5px 10px 0 rrgba(43, 172, 97, 0.5);
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+
+        span {
+            font-weight: 500;
+            font-size: 16px;
+        }
+
+        .job-already {
+            text-align: center;
+            font-size: 16px;
+            color: #999;
+        }
+        .signin-login-link {
+            color: #2979ff;
+            text-decoration: none;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .join-job {
+        max-width: 700px;
+        height: 640px;
+    }
+    .join-job-input {
+        display: grid;
+    }
+    label {
+        margin-top: 50px;
+    }
+    .join-job-or {
+        height: 100px;
+        margin: 20px;
+    }
+    .job-submit {
+        font-size: 15px;
+        width: 100%;
+    }
+}
